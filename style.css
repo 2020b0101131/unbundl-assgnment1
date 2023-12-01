@@ -1,0 +1,43 @@
+.prev-btn {
+    left: 12px;
+}
+
+.carousel-container {
+    position: relative;
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.product-item {
+    text-align: center;
+    flex: 0 0 100%;
+}
+
+.carousel-slide {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.prev-btn {
+    cursor: pointer;
+    top: 40%;
+    position: absolute;
+    font-size: 26px;
+}
+
+.next-btn {
+    right: 12px;
+    cursor: pointer;
+    top: 40%;
+    position: absolute;
+    font-size: 26px;
+}
+
+@media screen and (min-width: 480px) {
+    .carousel-slide {
+        display: flex;
+        transition: transform 1.5s ease-in-out;
+    }
+}
